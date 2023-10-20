@@ -5,7 +5,7 @@ interface ProjectItemProps {
     title: string;
 }
 
-const ProjectItem: React.FC<ProjectItemProps> = ({ img, title }) => {
+const ProjectItem1: React.FC<ProjectItemProps> = ({ img, title }) => {
     return (
         <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-purple-400 to-[#001b5e]'>
             <img src={img} alt={title} className='rounded-xl group-hover:opacity-10' />
@@ -13,8 +13,8 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ img, title }) => {
                 <h3 className='text-2xl font-bold text-white tracking-wider text-center'>
                     {title}
                 </h3>
-                <p className='text-xs pb-4 pt-2 text-white text-center'>Built with Vite/TypeScript/Tailwindcss</p>
-                <a href="/">
+                <p className='text-xs pb-4 pt-2 text-white text-center'>Mekker musikk</p>
+                <a href="https://open.spotify.com/artist/6P1l5kHarOo6oDN3RxCfZ1">
                     <p className='text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer'>
                         More Info
                     </p>
@@ -24,4 +24,4 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ img, title }) => {
     );
 };
 
-export default ProjectItem;
+export default ProjectItem1;

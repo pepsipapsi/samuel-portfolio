@@ -3,7 +3,7 @@ import ProjectItem1 from './ProjectItem1'
 // import ProjectItem2 from './ProjectItem2'
 // import ProjectItem3 from './ProjectItem3'
 // import NoImage from '../assets/No_Image_Available.jpg'
-import nobimu from '../assets/NordiskBibelMuseumLogo.png'
+import nobimu from '../assets/NordiskBibelMuseumLogo2.png'
 import SpotifyArtistProfile from '../assets/SpotifyArtistProfile.jpeg'
 
 function Projects() {

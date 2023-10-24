@@ -15,8 +15,8 @@ const ProjectItem1: React.FC<ProjectItemProps> = ({ img, title }) => {
                 </h3>
                 <p className='text-xs pb-4 pt-2 text-white text-center'>Mekker musikk</p>
                 <a href="https://open.spotify.com/artist/6P1l5kHarOo6oDN3RxCfZ1">
-                    <p className='text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer'>
-                        More Info
+                    <p className='text-center p-2 pl-6 pr-6 rounded-lg bg-white text-gray-700 font-bold cursor-pointer'>
+                            Se mer
                     </p>
                 </a>
             </div>

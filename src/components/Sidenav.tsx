@@ -11,14 +11,6 @@ const Sidenav = () => {
         setNav(!nav);
     };
 
-    // const theme = deepMerge(base, {
-    //     global: {
-    //         colors: {
-    //             brand: '#ff0000',
-    //         },
-    //     },
-    // });
-
     return (
         <div>
             <AiOutlineMenu onClick={handleNav}
@@ -57,33 +49,34 @@ const Sidenav = () => {
                             <div className='flex flex-col items-center '>
                                 <a href="#main" className="flex justify-center items-center rounded-md shadow-md bg-gray-100/50 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                                     <AiOutlineHome size={20} />
-                                    <p className='absolute flex flex-row pt-6 text-[5px] ease-in duration-300 font-semibold'>Home</p>
                                 </a>
+                                
                             </div>
+                            <p className='flex flex-row text-[10px] ease-in duration-300 font-semibold'>Home</p>
                             <div className='flex flex-col items-center  '>
                                 <a href="#work" className="flex justify-center items-center rounded-md shadow-md bg-gray-100/50 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                                     <GrProjects size={20} className="" />
-                                    <p className='absolute flex flex-row pt-6 text-[5px] ease-in duration-300 font-semibold'>Work</p>
                                 </a>
                             </div>
+                            <p className='flex flex-row text-[10px] ease-in duration-300 font-semibold'>Work</p>
                             <div className='flex flex-col items-center '>
                                 <a href="#projects" className="flex justify-center items-center rounded-md shadow-md bg-gray-100/50 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                                     <AiOutlineProject size={20} className="hover:white" />
-                                    <p className='absolute flex flex-row pt-6 text-[5px] ease-in duration-300 font-semibold'>Projects</p>   
                                 </a>
                             </div>
+                            <p className='flex flex-row text-[10px] ease-in duration-300 font-semibold'>Projects</p>
                             <div className='flex flex-col items-center '>
                                 <a href={SamuelCV} target="_blank" className="flex justify-center items-center rounded-md shadow-lg bg-gray-100/50 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                                     <BsPerson size={20} />
-                                    <p className='  absolute flex-row pt-6 text-[5px] ease-in duration-300 font-semibold'>Resume</p>
                                 </a>
                             </div>
+                            <p className='flex flex-row text-[10px] ease-in duration-300 font-semibold'>Resume</p>
                             <div className='flex flex-col items-center'>
                                 <a href="#contact" className="flex justify-center items-center rounded-md shadow-lg bg-gray-100/50 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                                     <AiOutlineMail size={20} />
-                                    <p className='absolute flex-row pt-6 text-[5px] ease-in duration-300 font-semibold'>Contact</p>
                                 </a>
                             </div>
+                            <p className='flex flex-row text-[10px] ease-in duration-300 font-semibold'>Contact</p>
                         </div>
                     </div>
                 )

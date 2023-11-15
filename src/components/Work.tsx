@@ -1,5 +1,5 @@
 import WorkItem from './WorkItem'
-import SamuelProfile from '../assets/SamuelProfile.jpg'
+// import SamuelProfile from '../assets/SamuelProfile.jpg'
 // import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa'
 import '../App.css';
 const data = [

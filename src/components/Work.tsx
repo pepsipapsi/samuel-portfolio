@@ -1,5 +1,7 @@
 import WorkItem from './WorkItem'
-
+import SamuelProfile from '../assets/SamuelProfile.jpg'
+// import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa'
+import '../App.css';
 const data = [
     {
         year: 2021,
@@ -23,7 +25,7 @@ const data = [
 
 function Work() {
     return (
-        <div id="work" className='max-w-[1040px] m-auto md:pl-20 p-4 py-16 '>
+        <div id="work" className='max-w-[1040px] m-auto md:pl-20 p-4 py-16 pb-0'>
             <h1 className='text-4xl font-bold text-center text-[#162a18] pb-16'>Jobb Historikk</h1>
             <h1 className='text-left font-bold text-[#162a18]'>
                 {data.map((item, index) => (
@@ -36,6 +38,14 @@ function Work() {
                     />
                 ))}
             </h1>
+            {/* Picture of me */}
+            {/* <div className="flex pt-20 items-center justify-center w-full">
+                <div className="text-center">
+                    <div className="mb-20 h-auto">
+                        <img src={SamuelProfile} style={{ width: "18em" }} alt="Samuel" className="mx-auto" />
+                    </div>
+                </div>
+            </div> */}
             <div className="relative inline-flex items-center justify-center w-full">
                 <hr className="w-80 h-px my-8 bg-stone-200 border-0 dark:bg-stone-200" />
                 <span className="absolute flex justify-between items-center bg-white text-stone-400 font-extralight sans mb-1 p-2">
@@ -46,4 +56,4 @@ function Work() {
     )
 }
 
-export default Work
+export default Work;

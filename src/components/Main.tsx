@@ -1,6 +1,7 @@
 import '../App.css'
 import { TypeAnimation } from 'react-type-animation'
-import { FaInstagram, FaYoutube, FaDiscord } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import ProfileButton from './ProfileButton';
 
 function Main() {
   return (
@@ -37,14 +38,16 @@ function Main() {
           </h2>
 
           <div className="flex justify-between pt-6 max-w-[250px] w-full">
-            <a href="">
-              <FaDiscord className="cursor-pointer text-white" size={40} />
+            <a href="https://www.linkedin.com/in/samuel-gonzalez-ampuero-455936213/">
+              <FaLinkedin className="cursor-pointer text-white" size={40} />
             </a>
-            <a href="">
-              <FaInstagram className="cursor-pointer text-white" size={40} />
-            </a>
-            <a href="">
-              <FaYoutube className="cursor-pointer text-white" size={40} />
+            {/* <button  className='flex flex-col justify-center items-center'>
+              <FaUser className="cursor-pointer text-white mb-2" size={40} />
+              <p className='text-white p-1 font-medium font-sans '>Profil</p>
+            </button> */}
+            <ProfileButton />
+            <a href="https://github.com/SpookTheProgrammer">
+              <FaGithub className="cursor-pointer text-white" size={40} />
             </a>
 
 

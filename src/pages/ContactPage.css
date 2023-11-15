@@ -1,0 +1,49 @@
+/* Styles for small screens (max-width: 780px) */
+@media (max-width: 780px) {
+	.back-button {
+		width: 80px;
+		height: 40px;
+		padding: 0;
+		display: none;
+		margin: 0; /* Reset margin to remove any default spacing */
+		border-radius: 100%;
+		justify-content: center;
+	}
+
+	.back-button span {
+		display: hidden;
+	}
+}
+
+.bg-section {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	width: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.fade-out {
+    animation: fadeOut 4s ease-in-out; /* 5s duration, ease-in-out timing function */
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+

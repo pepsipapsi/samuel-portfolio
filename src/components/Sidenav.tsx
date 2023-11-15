@@ -3,7 +3,9 @@ import { AiOutlineHome, AiOutlineMenu, AiOutlineProject, AiOutlineMail } from 'r
 import { GrProjects } from 'react-icons/gr'
 import { BsPerson } from 'react-icons/bs'
 import SamuelCV from '../assets/SamuelCV.pdf'
+import { Link } from 'react-router-dom';
 import '../App.css'
+// import Contact from './ThankYouPage'';
 const Sidenav = () => {
 
     const [nav, setNav] = useState(false);
@@ -38,10 +40,14 @@ const Sidenav = () => {
                             <BsPerson size={20} />
                             <span className="pl-4">Resume</span>
                         </a>
-                        <a href="#contact" className='w-[60%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
+                        <Link
+                            onClick={handleNav}
+                            to="/contact"
+                            className='w-[60%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'
+                        >
                             <AiOutlineMail size={20} />
                             <span className="pl-4">Contact</span>
-                        </a>
+                        </Link>
                     </div>
                 ) : (
                     <div className='md:block hidden fixed top-[15%] z-10 '>
@@ -50,7 +56,7 @@ const Sidenav = () => {
                                 <a href="#main" className="flex justify-center items-center rounded-md shadow-md bg-gray-100/50 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                                     <AiOutlineHome size={20} />
                                 </a>
-                                
+
                             </div>
                             <p className='flex flex-row text-[10px] ease-in duration-300 font-semibold'>Home</p>
                             <div className='flex flex-col items-center  '>
@@ -72,9 +78,11 @@ const Sidenav = () => {
                             </div>
                             <p className='flex flex-row text-[10px] ease-in duration-300 font-semibold'>Resume</p>
                             <div className='flex flex-col items-center'>
-                                <a href="#contact" className="flex justify-center items-center rounded-md shadow-lg bg-gray-100/50 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                                <Link
+                                    to="/contact" 
+                                    className="flex justify-center items-center rounded-md shadow-lg bg-gray-100/50 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                                     <AiOutlineMail size={20} />
-                                </a>
+                                </Link>
                             </div>
                             <p className='flex flex-row text-[10px] ease-in duration-300 font-semibold'>Contact</p>
                         </div>
